@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD231 - Web Front End Development 1 - Akuegbo Iheanyi Ejeagba</title>
+    <meta name="author" content="Akuegbo Iheanyi Ejeagba">
+    <meta name="description" content="WDD231 - Web Front End Development 1 - Course Home Page">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/course-page.css">
+    <script src="scripts/course-page.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img id="myImage1" src="images/index1.jpeg" alt="Picture of myself">
+            <h1>Akuegbo I. Ejeagaba</h1>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle-Menu">
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+            <span class="menu-icon"></span>
+        </button>
+        <nav>
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="#">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="course-work">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section id="location">
+            <h2>Lagos Nigeria</h2>
+            <img src="images/lagos1.jpg" alt="Ojuelegba Market">
+            <p>Ojuelegba Market Road</p>
+        </section>
+        <section id="certificates">
+            <h2>Web and Computer Programming Certificate</h2>
+            <div id="filter-buttons">
+                <button id="filter-all">All</button>
+                <button id="filter-cse">CSE</button>
+                <button id="filter-wdd">WDD</button>
+            </div>
+            <hr>
+            <div id="courses-container"></div>
+
+            <p>Total credits: <span id="total-credits"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span><br> 🌺 Akuegbo Iheanyi Ejeagba<br> 🌺 Nigeria <img
+                src="images/nigeria-flag1.png" alt="Nigeria Flag" class="flag"></p>
+        <p id="lastModified"> Last Update: </p>
+    </footer>
+</body>
+
+</html>
