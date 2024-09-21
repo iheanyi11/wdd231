@@ -1,0 +1,435 @@
+body {
+    font-family: "Playpen Sans", cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    color: white;
+    text-align: center;
+    background-color: #1E4966;
+    padding: 0;
+}
+
+header .profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #1E4966;
+    padding: 1rem;
+}
+
+header .profile img {
+    border-radius: 10px;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 1rem;
+}
+
+header h1 {
+    margin: 3rem;
+    padding: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 30px 0;
+    justify-content: space-between;
+    width: 60%;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #1E4966;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+nav a.active {
+    color: yellow;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+
+.menu-icon {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+#menu-toggle.open .menu-icon:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle.open .menu-icon:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle.open .menu-icon:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    padding: 3rem;
+    max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#course-work {
+    grid-column: 1/3;
+    width: 94%;
+}
+
+#location {
+    grid-column: 3/4;
+}
+
+#certificates {
+    grid-column: 1/4;
+}
+
+section {
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.3);
+    padding: 1rem;
+    position: relative;
+}
+
+section h2 {
+    text-align: center;
+    background-color: #1E4966;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: -1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    position: relative;
+    z-index: 1;
+    font-size: 30px;
+}
+
+section p {
+    text-align: center;
+    z-index: 2;
+}
+
+section img {
+    max-width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section:before {
+    content: '';
+    position: absolute;
+    top: -1rem;
+    left: -1rem;
+    right: -1rem;
+    bottom: -1rem;
+    background-color: #f4f4f9;
+    z-index: -1;
+    border-radius: 8px;
+}
+
+#filter-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#filter-buttons button {
+    margin: 0 0.5rem;
+    padding: 0.75rem 1.3rem;
+    cursor: pointer;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#filter-buttons button:hover {
+    background-color: #163d54;
+}
+
+#courses-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.course-row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: white;
+    width: 30%;
+}
+
+.course-card.completed {
+    background-color: #4CAF50;
+}
+
+.course-card.not-completed {
+    background-color: #778899;
+}
+
+footer {
+    background-color: #1E4966;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer br {
+    display: none;
+}
+
+.flag {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-bottom: -20px;
+}
+
+@media (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #1E4966;
+        padding: 0.5rem 1rem;
+    }
+
+    .profile h1 {
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+    }
+
+    header.profile {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    header.profile img {
+        margin-bottom: 0;
+        margin-right: 0.7rem;
+        height: 90px;
+        width: 90px;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #1E4966;
+        padding: 15px 0px;
+    }
+
+    nav ul {
+        display: list-item;
+        width: 100%;
+        justify-content: center;
+        padding: 20%;
+    }
+
+    nav a {
+        font-size: 8px;
+        color: white;
+    }
+
+    nav a:hover {
+        background-color: #1E4966;
+        color: white;
+        padding: 8px;
+        border-radius: 6px;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    main {
+        display: block;
+        padding: 1rem;
+        max-width: 100%;
+        border-color: white
+    }
+
+    #filter-buttons {
+        justify-content: center;
+        width: 100%;
+    }
+
+    section {
+        margin-bottom: 0;
+        box-shadow: none;
+    }
+
+    section h2 {
+        font-size: 15px;
+    }
+
+    .course-card {
+        width: 90%;
+        padding: 2px;
+    }
+
+    .course-row {
+        display: block;
+    }
+
+    .flag {
+        height: 30px;
+        width: 30px;
+        margin-bottom: -10px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    footer br {
+        display: block;
+    }
+}
+
+/* Define keyframes for fadeInUp animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Define keyframes for swell animation */
+@keyframes swell {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Apply fadeInUp animation to each course card */
+.course-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: white;
+    width: 30%;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+    animation-delay: 0.2s;
+    /* Adjust delay for each card */
+    transition: transform 0.3s ease;
+    /* Add transition for transform property */
+}
+
+/* Apply swell animation on hover and when visible */
+.course-card:hover,
+.course-card.visible {
+    animation: swell 0.3s ease forwards;
+    transform: scale(1.05);
+    z-index: 1;
+    /* Ensures hovered/visible card is on top */
+    opacity: 1;
+    /* Ensure the card is fully visible */
+}
+
+/* Adjust animation delays for each card */
+.course-card:nth-child(2) {
+    animation-delay: 0.4s;
+    /* Delay for the second card */
+}
+
+.course-card:nth-child(3) {
+    animation-delay: 0.6s;
+    /* Delay for the third card */
+}
+
+.course-card:nth-child(4) {
+    animation-delay: 0.8s;
+    /* Delay for the fourth card */
+}
+
+.course-card:nth-child(5) {
+    animation-delay: 1s;
+    /* Delay for the fifth card */
+}
+
+.course-card:nth-child(6) {
+    animation-delay: 1.2s;
+    /* Delay for the sixth card */
+}
