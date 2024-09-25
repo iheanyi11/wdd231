@@ -1,0 +1,23 @@
+{
+    "family_name": "Uko",
+    "date_moved": "2024-09-24",
+    "number_of_people": 4,
+    "visited_by_bishopric": true,
+    "family member": [
+        {
+            "name": "Nene",
+            "gender": "Female",
+            "birthdate": "1990-07-07"
+        },
+        {
+            "name": "Ibe",
+            "gender": "Male",
+            "birthdate": "2001-02-26"
+        },
+        {
+            "name": "Iheanyi",
+            "gender": "Male",
+            "birthdate": "2003-07-11"
+        }
+    ]
+}
