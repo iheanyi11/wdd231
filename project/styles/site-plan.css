@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Texturina:opsz,wght@12..72,700&family=Urbanist:wght@700&display=swap');
+
+:root {
+
+    --heading-color: #AACCFF;
+    --background-color: #f7f7f7;
+    --accent1-color: #F7811F;
+
+
+
+    --heading-font: "Texturina";
+    --paragraph-font: Urbanist, Helvetica, sans-serif;
+
+
+    --headline-color-on-white: #AACCFF;
+    /* headlines on a white background */
+    --headline-color-on-color: #f7f7f7;
+    /* headlines on a colored background */
+    --paragraph-color-on-white: #333333;
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: #f7f7f7;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: #AACCFF;
+
+}
+
+
+body {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    text-align: center;
+}
+
+#branding img {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+    height: 100px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--headline-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+
+header>h1,
+header>h2 {
+    color: var(--headline-color-on-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+}
+
+.primary {
+    background-color: var(--heading-color);
+}
+
+.secondary {
+    background-color: var(--background-color);
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
