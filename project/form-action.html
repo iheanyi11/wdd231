@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevenKay Restaurant form action page</title>
+    <meta name="author" content="Akuegbo Iheanyi Ejeagba">
+    <meta name="description" content="WDD231 - Web Front End Development 1 - End of semester project">
+
+    <!-- Open Graph meta properties -->
+    <meta property="og:title" content="Local Restaurant">
+    <meta property="og:description" content="Enjoy delicious meals and a great ambience at our restaurant.">
+    <meta property="og:image"
+        content="https://media.istockphoto.com/id/2149219718/photo/3d-render-of-cafe-restaurant-interior.jpg?s=1024x1024&w=is&k=20&c=udyyx1ivAVlSQX2OHNemIEWHupo4Ef9nepIK-UQ-aB0=">
+    <meta property="og:url" content="https://iheanyi11.github.io/wdd231/project/index.html">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/contact.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/restaurant-logo.png" alt="Website Logo">
+                <h1>ElevenKay Restaurant</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle-Menu">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="thank-you-section">
+            <h1>Thank You for Contacting Us!</h1>
+            <p>We appreciate your message and will get back to you as soon as possible</p>
+
+            <div class="form-details">
+                <h2>Your Submitted Information</h2>
+                <p><strong>Name:</strong> <span id="submitted-name"></span></p>
+                <p><strong>Email:</strong> <span id="submitted-email"></span></p>
+                <p><strong>Message:</strong> <span id="submitted-message"></span></p>
+            </div>
+
+            <!-- Go Back Button -->
+            <a href="index.html" class="btn">Back to Home</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 | ElevenKay Restaurant </p>
+
+            <div class="social-media">
+                <a href="https://indeed.com" target="_blank">
+                    <img src="images/indeed.png" alt="Indeed">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/x-image.png" alt="Twitter">
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.jpg" alt="Youtube">
+                </a>
+            </div>
+        </div>
+
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
