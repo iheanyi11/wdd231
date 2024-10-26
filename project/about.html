@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevenKay Restaurant about page</title>
+    <meta name="author" content="Akuegbo Iheanyi Ejeagba">
+    <meta name="description" content="WDD231 - Web Front End Development 1 - End of semester project">
+
+    <!-- Open Graph meta properties -->
+    <meta property="og:title" content="Local Restaurant">
+    <meta property="og:description" content="Enjoy delicious meals and a great ambience at our restaurant.">
+    <meta property="og:image"
+        content="https://media.istockphoto.com/id/2149219718/photo/3d-render-of-cafe-restaurant-interior.jpg?s=1024x1024&w=is&k=20&c=udyyx1ivAVlSQX2OHNemIEWHupo4Ef9nepIK-UQ-aB0=">
+    <meta property="og:url" content="https://iheanyi11.github.io/wdd231/project/index.html">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/about.css">
+    <script src="scripts/about.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/restaurant-logo.png" alt="Website Logo">
+                <h1>ElevenKay Restaurant</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle-Menu">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="restaurant-story">
+            <h1>Our Story</h1>
+            <p>ElevenKay Restaurant started as a dream to create a dining experience that reflects the finest in
+                culinary art and local culture.
+                Founded by a group of food enthusiasts in 2010, we wanted to blend gourmet meals with the warmth of a
+                home-cooked atmosphere.
+                Today, we are known for our fusion of unique ingredients, timeless recipes, and exceptional service.</p>
+            <img src="images/restaurant-story.webp" alt="restaurant dining area">
+        </section>
+
+        <section class="mission-statement">
+            <h2>Our Mission</h2>
+            <p>At ElevenKay, we believe in bringing people together through good food, creativity, and genuine
+                hospitality.
+                Our mission is to provide memorable meals crafted with care, using fresh, sustainable ingredients
+                sourced from local farms and suppliers.</p>
+        </section>
+
+        <section class="our-team">
+            <h2>Meet the team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="images/iheanyi.jpeg" alt="CEO">
+                    <h3>Iheanyi Ejeagba</h3>
+                    <p>Chief Executive Officer</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/collinns-okolie.jpeg" alt="Manager">
+                    <h3>Collins Okolie</h3>
+                    <p>Restaurant Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/joy-sobowale.jpeg" alt="Executive-chef">
+                    <h3>Joy Sobowale</h3>
+                    <p>Executive Chef</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/esther-twin.png" alt="pastry-chef">
+                    <h3>Esther Osaloto</h3>
+                    <p>Pastry Chef</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="image-gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="images/dish1.webp" alt="Dish 1">
+                <img src="images/dish2.webp" alt="Dish 2">
+                <img src="images/dish3.webp" alt="Dish 3">
+                <img src="images/dish4.jpg" alt="Dish 4">
+            </div>
+        </section>
+
+        <div class="modal" style="display:none;">
+            <div class="modal-content">
+                <!-- Dynamic content will be inserted here via JavaScript -->
+            </div>
+            <span class="close-modal"
+                style="position:absolute; top:10px; right:20px; font-size:2rem; cursor:pointer;">&times;</span>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 | ElevenKay Restaurant </p>
+
+            <div class="social-media">
+                <a href="https://indeed.com" target="_blank">
+                    <img src="images/indeed.png" alt="Indeed">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/x-image.png" alt="Twitter">
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.jpg" alt="Youtube">
+                </a>
+            </div>
+        </div>
+
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>

@@ -1,0 +1,374 @@
+/* Global Styles */
+body {
+    font-family: 'DynaPuff', system-ui;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+a {
+    color: #ff6347;
+    /* Tomato color for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+header {
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #ccc;
+}
+
+nav a:hover {
+    background-color: #ff4500;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+}
+
+.menu-icon {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    display: block;
+    margin: 5px 0;
+    transition: all 0.3s ease;
+}
+
+#menu-toggle.open .menu-icon:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+#menu-toggle.open .menu-icon:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle.open .menu-icon:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Hero Section */
+.hero-content {
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    /* Centers the text and button */
+}
+
+.hero h1 {
+    font-size: 3rem;
+    /* Adjust size to fit the content better */
+    margin-bottom: 20px;
+    display: block;
+    /* Ensure it's on a separate line */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    /* Add more space before the button */
+    display: block;
+    /* Ensure it's on a separate line */
+}
+
+.hero .btn-reservation {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn-reservation:hover {
+    background-color: #ff4500;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+}
+
+/* .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+} */
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.feature-item h3 {
+    margin: 15px 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.feature-item p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black with opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: left;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+}
+
+footer .social-media img {
+    width: 32px;
+    height: 32px;
+    filter: invert(100%);
+    /* White icons for dark background */
+    transition: transform 0.3s ease;
+}
+
+footer .social-media img:hover {
+    transform: scale(1.2);
+}
+
+
+@media (max-width: 767px) {
+    #menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0px;
+    }
+
+    nav ul {
+        display: list-item;
+        width: 100%;
+        justify-content: center;
+        padding: 20%;
+    }
+
+    nav a {
+        font-size: 8px;
+        color: white;
+    }
+
+    nav a:hover {
+        background-color: #1E4966;
+        color: white;
+        padding: 8px;
+        border-radius: 6px;
+    }
+
+    nav.show {
+        display: flex;
+    }
+
+    .main-contents {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        /* Stack features on mobile */
+    }
+
+    footer .social-media a {
+        margin: 0 5px;
+    }
+}
+
+/* Responsive Styles for Small Devices (400px and below) */
+@media (max-width: 480px) {
+    .hero img {
+        max-height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+        /* Further reduce heading size */
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        /* Slightly smaller text for the paragraph */
+        margin-bottom: 15px;
+    }
+
+    .hero .btn {
+        padding: 10px 20px;
+        /* Make the button even more compact */
+        font-size: 0.9rem;
+        /* Smaller font size for button */
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+        /* Reduce container padding for small screens */
+    }
+
+    footer p {
+        font-size: 0.9rem;
+        /* Smaller text in footer */
+    }
+
+    footer .social-icons a {
+        font-size: 1.3rem;
+        /* Slightly smaller social icons */
+    }
+}
