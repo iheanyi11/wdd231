@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElevenKay Restaurant contact page</title>
+    <meta name="author" content="Akuegbo Iheanyi Ejeagba">
+    <meta name="description" content="WDD231 - Web Front End Development 1 - End of semester project">
+
+    <!-- Open Graph meta properties -->
+    <meta property="og:title" content="Local Restaurant">
+    <meta property="og:description" content="Enjoy delicious meals and a great ambience at our restaurant.">
+    <meta property="og:image"
+        content="https://media.istockphoto.com/id/2149219718/photo/3d-render-of-cafe-restaurant-interior.jpg?s=1024x1024&w=is&k=20&c=udyyx1ivAVlSQX2OHNemIEWHupo4Ef9nepIK-UQ-aB0=">
+    <meta property="og:url" content="https://iheanyi11.github.io/wdd231/project/index.html">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/contact.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/restaurant-logo.png" alt="Website Logo">
+                <h1>ElevenKay Restaurant</h1>
+            </div>
+            <button id="menu-toggle" aria-label="Toggle-Menu">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Fill out the form below or contact us via our phone number and email.</p>
+
+            <div class="contact-details">
+                <div class="contact-info">
+                    <h2>Our Address</h2>
+                    <p>21 Olayinka Balogun Street, Ejigbo Lagos</p>
+                    <h2>Phone</h2>
+                    <p>09022943052</p>
+                    <h2>Email</h2>
+                    <p>ejeagbaakuegb@gmail.com</p>
+                </div>
+
+                <!-- Weather API Section -->
+                <div class="weather-info">
+                    <h2>Current Weather</h2>
+                    <div id="weather">
+                        <p>Loading current weather....</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact form section -->
+            <form id="contact-form" action="form-action.html" method="get">
+                <label for="name">Name</label>
+                <input type="text" id="text" name="text" required placeholder="Your full name">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="Your email address">
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Your message here"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 | ElevenKay Restaurant </p>
+
+            <div class="social-media">
+                <a href="https://indeed.com" target="_blank">
+                    <img src="images/indeed.png" alt="Indeed">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/x-image.png" alt="Twitter">
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img src="images/youtube.jpg" alt="Youtube">
+                </a>
+            </div>
+        </div>
+
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
